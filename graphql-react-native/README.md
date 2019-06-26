@@ -51,16 +51,7 @@ const client = new ApolloClient({
 ```
 > Bind query for all reservations to Reservations.js Component
 ```javascript
-import * as React from 'react'
-import { TextField } from 'office-ui-fabric-react/lib/TextField'
-import { DetailsList, Selection, SelectionMode } from 'office-ui-fabric-react/lib/DetailsList'
-import { Spinner, SpinnerSize } from 'office-ui-fabric-react/lib/Spinner'
-import { Fabric } from 'office-ui-fabric-react/lib/Fabric'
-import { mergeStyles } from 'office-ui-fabric-react/lib/Styling'
-import gql from 'graphql-tag'
-import { graphql } from 'react-apollo'
-import { ReservationsList } from './ReservationsList'
-import _ from 'lodash'
+
   
 const reservations = `
 	{
@@ -75,11 +66,7 @@ const reservations = `
 `
 const getMarketsQuery = gql`${reservations}`
   
-const childClass = mergeStyles({
-	display: 'block',
-	marginBottom: '10px'
-})
-  
+
 class Res extends React.Component {
 	constructor (props) {
 		super(props)
