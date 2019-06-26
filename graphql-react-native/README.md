@@ -1,6 +1,6 @@
 ## React Native GraphQL
   
-> cd into the client folder 
+
 ```bash{.env-code}
 npm install
 ```
